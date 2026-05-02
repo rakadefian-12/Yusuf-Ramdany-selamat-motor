@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yusuf Ramdany Motor — Dealer Motor Honda Terpercaya</title>
+  <meta name="description" content="Yusuf Ramdany Motor — Authorized Dealer Honda Selamat Lestari Mandiri. DP ringan, proses cepat, banyak promo. Beat, Vario, Scoopy, PCX, ADV, CBR." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏍️%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#beranda" class="brand">
+      <span class="brand-mark">YR</span>
+      <span class="brand-text">Yusuf Ramdany <small>Yusuf Ramdany selamat motor</small></span>
+    </a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#produk">Produk</a></li>
+      <li><a href="#angsuran">Angsuran</a></li>
+      <li><a href="#testimoni">Testimoni</a></li>
+      <li><a href="#galeri">Galeri</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="icon-sun">☀️</span><span class="icon-moon">🌙</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="beranda">
+  <div class="hero-bg"></div>
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <span class="badge">Dealer Selamat Lestari Mandiri</span>
+      <h1>Yusuf Ramdany <span class="text-red">Motor</span></h1>
+      <p class="subtitle">Dealer Motor Honda Terpercaya</p>
+      <p class="lead">DP Ringan • Proses Cepat • Promo Setiap Bulan • Antar Sampai Rumah</p>
+      <div class="hero-cta">
+        <a href="#produk" class="btn btn-primary">Lihat Produk</a>
+        <a href="#angsuran" class="btn btn-outline">Hitung Angsuran</a>
+        <a id="heroWa" class="btn btn-wa" target="_blank" rel="noopener">💬 Chat WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="images/yusuf.jpg" alt="Yusuf Ramdany - Sales Honda" />
+      <div class="hero-card">
+        <strong>Yusuf Ramdany selamat motor</strong>
+        <span>Sales Honda Profesional</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- PRODUK -->
+<section class="section" id="produk">
+  <div class="container">
+    <div class="section-head">
+      <h2>Produk Motor Honda</h2>
+      <p>Pilih motor impianmu — semua varian Honda tersedia.</p>
+    </div>
+    <div class="products" id="products"></div>
+  </div>
+</section>
+
+<!-- ANGSURAN -->
+<section class="section section-alt" id="angsuran">
+  <div class="container">
+    <div class="section-head">
+      <h2>Simulasi Kredit Motor</h2>
+      <p>Pilih motor & DP — angsuran otomatis dari tabel resmi April 2026.</p>
+    </div>
+    <div class="calc-wrap">
+      <div class="calc-form">
+        <label>Pilih Motor
+          <select id="calcMotor"></select>
+        </label>
+        <div class="row">
+          <label>Harga Cash
+            <input type="text" id="calcHarga" readonly />
+          </label>
+          <label>DP (Uang Muka)
+            <select id="calcDp"></select>
+          </label>
+        </div>
+        <label>Tenor (Bulan)
+          <div class="tenor-pills" id="tenorPills"></div>
+        </label>
+        <button class="btn btn-primary btn-block" id="calcBtn">Hitung Angsuran</button>
+        <a id="calcWa" class="btn btn-wa btn-block" target="_blank" rel="noopener">💬 Konsultasi WhatsApp</a>
+      </div>
+      <div class="calc-result">
+        <div class="result-card">
+          <span class="result-label">Angsuran per Bulan</span>
+          <span class="result-value" id="resAngsuran">Rp 0</span>
+          <div class="result-meta">
+            <div><span>Motor</span><strong id="resMotor">-</strong></div>
+            <div><span>Harga Cash</span><strong id="resHarga">-</strong></div>
+            <div><span>DP</span><strong id="resDp">-</strong></div>
+            <div><span>Tenor</span><strong id="resTenor">-</strong></div>
+            <div><span>Total Bayar</span><strong id="resTotal">-</strong></div>
+          </div>
+          <p class="result-note">*Simulasi mengikuti tabel angsuran resmi DP Besar — April 2026. Hubungi WhatsApp untuk konfirmasi & pengajuan kredit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KEUNGGULAN -->
+<section class="section" id="keunggulan">
+  <div class="container">
+    <div class="section-head">
+      <h2>Kenapa Beli di Yusuf Ramdany Motor?</h2>
+    </div>
+    <div class="features">
+      <div class="feature"><div class="feature-icon">💰</div><h3>DP Ringan</h3><p>Bisa DP mulai 2 jutaan, cicilan disesuaikan kemampuan.</p></div>
+      <div class="feature"><div class="feature-icon">⚡</div><h3>Proses Cepat</h3><p>Pengajuan kredit cepat, ACC dalam hitungan jam.</p></div>
+      <div class="feature"><div class="feature-icon">🎁</div><h3>Banyak Promo</h3><p>Diskon, bonus aksesoris & free service rutin.</p></div>
+      <div class="feature"><div class="feature-icon">🚚</div><h3>Antar ke Rumah</h3><p>Motor diantar gratis sampai depan rumahmu.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERI -->
+<section class="section section-alt" id="galeri">
+  <div class="container">
+    <div class="section-head">
+      <h2>Galeri Serah Terima Motor</h2>
+      <p>Momen bahagia para pelanggan menerima motor barunya.</p>
+    </div>
+    <div class="galeri">
+      <figure><img src="images/galeri1.jpg" alt="Serah terima 1" loading="lazy"><figcaption>Pak Andi — Honda ADV</figcaption></figure>
+      <figure><img src="images/galeri2.jpg" alt="Serah terima 2" loading="lazy"><figcaption>Keluarga Bu Sari — Scoopy</figcaption></figure>
+      <figure><img src="images/galeri3.jpg" alt="Serah terima 3" loading="lazy"><figcaption>Mas Rian — Vario 160</figcaption></figure>
+      <figure><img src="images/galeri4.jpg" alt="Serah terima 4" loading="lazy"><figcaption>Pasangan Bpk Doni — Beat</figcaption></figure>
+      <figure><img src="images/galeri5.jpg" alt="Serah terima 5" loading="lazy"><figcaption>Diantar ke rumah — PCX</figcaption></figure>
+      <figure><img src="images/galeri6.jpg" alt="Serah terima 6" loading="lazy"><figcaption>Komunitas CBR — Pengiriman bersama</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section class="section" id="testimoni">
+  <div class="container">
+    <div class="section-head">
+      <h2>Apa Kata Pelanggan</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi"><img src="images/testi1.jpg" alt="" loading="lazy"><p>"Pelayanan ramah, prosesnya cepat banget. Hari ini nego, besok motor sudah di rumah!"</p><strong>Bpk. Hendra</strong><span>Honda PCX 160</span></div>
+      <div class="testi"><img src="images/testi2.jpg" alt="" loading="lazy"><p>"Bang Yusuf sabar banget jelasin simulasi kredit. Dapat motor impian dengan DP ringan."</p><strong>Ibu Maya</strong><span>Honda Scoopy</span></div>
+      <div class="testi"><img src="images/testi3.jpg" alt="" loading="lazy"><p>"Recommended! Harga kompetitif, banyak bonus, dan unit langsung ready stock."</p><strong>Mas Aldi</strong><span>Honda CBR 150R</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container cta-inner">
+    <h2>Ambil Motor Honda Impian Anda Sekarang!</h2>
+    <p>Konsultasi gratis, simulasi cepat, langsung ACC.</p>
+    <a id="ctaWa" class="btn btn-wa btn-lg" target="_blank" rel="noopener">💬 Chat WhatsApp Sekarang</a>
+  </div>
+</section>
+
+<!-- KONTAK -->
+<section class="section" id="kontak">
+  <div class="container">
+    <div class="section-head"><h2>Hubungi Saya</h2></div>
+    <div class="kontak-grid">
+      <a id="kontakWa" class="kontak-card" target="_blank" rel="noopener">
+        <div class="k-icon">💬</div>
+        <strong>WhatsApp</strong>
+        <span>+62 831-6389-5963</span>
+      </a>
+      <a href="https://www.tiktok.com/" target="_blank" rel="noopener" id="kontakTiktok" class="kontak-card">
+        <div class="k-icon">🎵</div>
+        <strong>TikTok</strong>
+        <span>@yusuframdanymotor</span>
+      </a>
+      <a href="https://maps.app.goo.gl/Nvtfv1Png6xFWrax9?g_st=awb" target="_blank" rel="noopener" class="kontak-card">
+        <div class="k-icon">📍</div>
+        <strong>Alamat</strong>
+        <span>Honda Selamat Lestari Mandiri (Lihat di Maps)</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p>© <span id="year"></span> Yusuf Ramdany Motor — Authorized Dealer Honda Selamat Lestari Mandiri. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- WA FLOATING -->
+<a id="floatWa" class="float-wa" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+  <span>💬</span>
+</a>
+
+<script src="js/angsuran-data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
