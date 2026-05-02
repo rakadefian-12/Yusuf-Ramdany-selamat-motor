@@ -35,12 +35,12 @@ navMenu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => nav
 
 /* ---------- Products (showcase the 6 main models) ---------- */
 const PRODUCTS = [
-  { name: "Honda Beat", img: "images/beat.jpg", sheet: "BEAT SPORTY CBS" },
-  { name: "Honda Vario", img: "images/vario.jpg", sheet: "VARIO 160 CBS" },
-  { name: "Honda Scoopy", img: "images/scoopy.jpg", sheet: "SCOOPY ENERGETIC" },
-  { name: "Honda PCX", img: "images/pcx.jpg", sheet: "PCX 160 CBS" },
-  { name: "Honda ADV", img: "images/adv.jpg", sheet: "ADV 160 CBS" },
-  { name: "Honda CBR", img: "images/cbr.jpg", sheet: "CBR150R STD (BK)" },
+  { name: "BEAT SPORTY", img: "images/beat.jpg", sheet: "BEAT SPORTY CBS" },
+  { name: "VARIO 125", img: "images/vario.jpg", sheet: "VARIO 160 CBS" },
+  { name: "Scoopy", img: "images/scoopy.jpg", sheet: "SCOOPY ENERGETIC" },
+  { name: "PCX 160", img: "images/pcx.jpg", sheet: "PCX 160 CBS" },
+  { name: "ADV 160", img: "images/adv.jpg", sheet: "ADV 160 CBS" },
+  { name: "VARIO 160", img: "images/cbr.jpg", sheet: "CBR150R STD (BK)" },
 ];
 
 const productsEl = document.getElementById("products");
