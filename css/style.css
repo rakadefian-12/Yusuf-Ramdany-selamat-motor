@@ -199,3 +199,19 @@ h1,h2,h3{font-weight:700;line-height:1.2;margin:0 0 .5em}
   .calc-form .row{grid-template-columns:1fr}
   .result-meta{grid-template-columns:1fr}
 }
+
+.alamat {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.alamat a {
+  color: #000000;
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.alamat a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
